@@ -1,0 +1,78 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff; }
+
+input, button {
+  outline: none; }
+
+main {
+  font-family: Arial, Helvetica, sans-serif; }
+  main .container {
+    height: 100vh;
+    background: -webkit-linear-gradient(315deg, #039be5 0%, #01579b 100%);
+    background: -o-linear-gradient(315deg, #039be5 0%, #01579b 100%);
+    background: linear-gradient(135deg, #039be5 0%, #01579b 100%);
+    padding-top: 2em; }
+    main .container h1 {
+      text-align: center;
+      margin-bottom: 30px; }
+    main .container #wrapper-global {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      max-width: 70%;
+      margin: 0 auto; }
+      main .container #wrapper-global #sign-in, main .container #wrapper-global #sign-up {
+        width: 50%; }
+        main .container #wrapper-global #sign-in h2, main .container #wrapper-global #sign-up h2 {
+          text-align: center;
+          margin-bottom: 30px; }
+        main .container #wrapper-global #sign-in form *, main .container #wrapper-global #sign-up form * {
+          display: block;
+          margin: 20px auto; }
+        main .container #wrapper-global #sign-in form input, main .container #wrapper-global #sign-up form input {
+          padding: 15px 20px;
+          width: 70%;
+          border: 2px solid #fff;
+          border-radius: 10px;
+          background: transparent;
+          color: #fff; }
+          main .container #wrapper-global #sign-in form input::-webkit-input-placeholder, main .container #wrapper-global #sign-up form input::-webkit-input-placeholder {
+            color: #fff; }
+          main .container #wrapper-global #sign-in form input:-ms-input-placeholder, main .container #wrapper-global #sign-up form input:-ms-input-placeholder {
+            color: #fff; }
+          main .container #wrapper-global #sign-in form input::-ms-input-placeholder, main .container #wrapper-global #sign-up form input::-ms-input-placeholder {
+            color: #fff; }
+          main .container #wrapper-global #sign-in form input::placeholder, main .container #wrapper-global #sign-up form input::placeholder {
+            color: #fff; }
+        main .container #wrapper-global #sign-in form button, main .container #wrapper-global #sign-up form button {
+          border: 2px solid #fff;
+          background-color: #039be5;
+          padding: 10px;
+          border-radius: 10px;
+          cursor: pointer;
+          -webkit-transition: all .5s;
+          -o-transition: all .5s;
+          transition: all .5s; }
+          main .container #wrapper-global #sign-in form button:hover, main .container #wrapper-global #sign-up form button:hover {
+            border: 2px solid #039be5;
+            background-color: #fff;
+            color: #039be5; }
+    @media only screen and (max-width: 768px) {
+      main .container {
+        height: unset; }
+        main .container #wrapper-global {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          max-width: 100%; }
+          main .container #wrapper-global #sign-in, main .container #wrapper-global #sign-up {
+            width: 100%; } }
